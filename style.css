@@ -42,11 +42,23 @@ body {
   border-radius: 20px;
   box-shadow: 2px 3px 15px rgba(252, 56, 56, 0.1);
 }
-
+#imgTap:checked ~ .inner-part .img {
+  height: 370px;
+  width: 850px;
+  z-index: 99;
+  margin-top: 10px;
+  transition: 0.3s 0.2s ease-in;
+}
 .img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit#imgTap:checked ~ .inner-part .img {
+  height: 370px;
+  width: 850px;
+  z-index: 99;
+  margin-top: 10px;
+  transition: 0.3s 0.2s ease-in;
+}: cover;
   cursor: pointer;
   opacity: 0;
   transition: 0.6s;
