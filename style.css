@@ -154,6 +154,7 @@ body {
   top: 0;
   left: 0;
   height: 100%;
+  
   width: -100%;
   background: linear-gradient(147deg, #f6b323 0%, #f23b26 74%);
   border-radius: 10px;
