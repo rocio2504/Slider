@@ -712,46 +712,44 @@ $(document).ready(function () {
         //seleccionar opciones radio
         var nivel = $("#cbo_evaluacion").val();
         var mensj='';
+        var opcion1='<div class="row" style="margin-left:5px;"><label class="col-md-12"> <input type="radio" name="pedido" value="1">  Base de datos a nivel de institución educativa con identificación de código modular.</label></div>';
+         var opcion2='<div class="row" style="margin-left:5px;"><label class="col-md-12"><input type="radio" name="pedido" value="2">      Base de datos a nivel de institución educativa con identificación de código modular y de estudiantes<sup>1</sup> (innominado).<br> </label><div><label class="col-md-12" style="text-align:justify; margin-right: 5px; display:block;">Nota: esta base de datos requiere mayores competencias técnicas para su manejo<br><span style="font-size: 10px; text-align:justify; margin-right: 5px; display:block;"><sup>1</sup>Amparados en el deber de respetar y proteger los derechos humanos, fundamentales y constitucionales de los informantes (honor, intimidad, entre otros), y por lo que prescriben la Ley de Protección de Datos Personales (Ley N° 29733), así como por el Código de Buenas Prácticas Estadísticas (aprobado por D.S. N° 072-2012-ED), no se brinda, en caso alguno, la identificación de los estudiantes.</span></label></div> </div>';
+         var opcion3='<div class="row" style="margin-left:5px; "> <label class="col-md-12"> <input type="radio" name="pedido" value="3">   Base de datos a nivel de estudiantes<sup>1</sup> (innominado).<br></label><div>   <label class="col-md-12" style="text-align:justify; margin-right: 5px; display:block;"> Nota: esta base de datos requiere mayores competencias técnicas para su manejo<br><span style="font-size: 10px; text-align:justify; margin-right: 5px; display:block;"><sup>1</sup>Amparados en el deber de respetar y proteger los derechos humanos, fundamentales y constitucionales de los informantes (honor, intimidad, entre otros), y por lo que prescriben la Ley de Protección de Datos Personales (Ley N° 29733), así como por el Código de Buenas Prácticas Estadísticas (aprobado por D.S. N° 072-2012-ED), no se brinda, en caso alguno, la identificación de los estudiantes.</span> </label></div></div>';
+
 
         if(nivel !=0){
 
             switch (nivel) {
         case '1': 
              mensj=  "<b>Evaluación Censal de Estudiantes (ECE)</b>";
-             $('#op1').show();
-             $('#op2').show();
-             $('#op3').hide(); 
+             $('#radio').html(opcion1+opcion2);
+
 
              break;
         case '2': 
             mensj=  "<b>Evaluación Muestral (EM)</b>"; 
-            $('#op1').hide();
-            $('#op2').show();
-            $('#op3').hide();
+
+            $('#radio').html(opcion2);
             break;
         case '3': 
             mensj="<b>El Estudio Virtual de Aprendizajes – EVA 2021</b>"; 
-            $('#op1').hide();
-            $('#op2').show();
-            $('#op3').hide();
+
+            $('#radio').html(opcion2);
             break;
         case '4': 
             mensj="<b>Evaluación PISA</b>"; 
-            $('#op1').hide();
-            $('#op2').hide();
-            $('#op3').show();
+
+             $('#radio').html(opcion3);
             break;
         case '5': 
             mensj="<b>Estudio Internacional de Cívica y Ciudadanía (ICCS)</b>";
-            $('#op1').hide();
-            $('#op2').hide();
-            $('#op3').show(); 
+
+             $('#radio').html(opcion3);
             break;
         case '6': 
             mensj="<b>Evaluación del Laboratorio Latinoamericano de Evaluación de la Calidad de la Educación (LLECE)</b>";  
-            $('#op1').hide();
-            $('#op2').hide();
-            $('#op3').show();
+         
+             $('#radio').html(opcion3);
             break;
                  
       default:
