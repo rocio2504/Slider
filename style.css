@@ -173,6 +173,9 @@ input[type='radio'],
 input[type='checkbox'] {
   display: none;
 }
+
+
+
 #tap-1:checked ~ .sliders .tap-1:before,
 #tap-2:checked ~ .sliders .tap-2:before,
 #tap-3:checked ~ .sliders .tap-3:before {
