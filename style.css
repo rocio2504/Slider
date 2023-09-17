@@ -49,6 +49,9 @@ body {
   margin-top: 10px;
   transition: 0.3s 0.2s ease-in;
 }
+
+
+
 .img img {
   height: 100%;
   width: 100%;
@@ -69,6 +72,10 @@ body {
   opacity: 1;
   transition-delay: 0.2s;
 }
+
+
+
+
 .content {
   padding: 0 20px 0 35px;
   width: 530px;
